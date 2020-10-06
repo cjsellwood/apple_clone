@@ -128,8 +128,106 @@ table {
 
 .navbar {
   width: 980px;
-  margin: 100px auto 0 auto;
+  margin: 90px auto 0 auto;
   height: 36px;
   background: linear-gradient(rgb(156, 156, 156) 50%, rgb(73, 73, 73));
   background: linear-gradient(180deg, rgba(148,143,143,1) 50%, rgba(119,118,118,1) 50%);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid rgb(92, 92, 92);
+  box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+}
+
+.nav-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 106px) 1fr;
+  
+}
+
+.nav-item {
+  height: 100%;
+  background-image: url("images/nav-icons.svg");
+}
+
+.nav-item > a {
+  display: block;
+  height: 100%;
+  border-right: 1px solid rgb(92, 92, 92);;
+  color: transparent;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.nav1 {
+  background-position: center -1%;
+}
+
+.nav2 {
+  background-position: center 13%;
+}
+.nav3 {
+  background-position: center 27.5%;
+}
+.nav4 {
+  background-position: center 42%;
+}
+.nav5 {
+  background-position: center 56.8%;
+}
+.nav6 {
+  background-position: center 71.5%;
+}
+.nav7 {
+  background-position: center 86.2%;
+}
+.nav8 {
+  background-position: center 101%;
+}
+
+.nav-search {
+  background-image: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-search:hover {
+  background-color: transparent;
+}
+
+.nav-search > input {
+  height: 19.5px;
+  width: 106px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: transparent;
+  padding: 2px 18px 1px 22px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+}
+
+#magnify-icon {
+  width: 15px;
+  height: 14px;
+  position: absolute;
+  left: 18px;
+  top: 11px;
+  filter: brightness(1000%);
+  -webkit-filter: brightness(1000%);
+}
+
+main {
+  background-image: url("images/main-image.jpg");
+  
 }

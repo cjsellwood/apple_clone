@@ -128,10 +128,10 @@ table {
 
 .navbar {
   width: 980px;
-  margin: 90px auto 0 auto;
+  margin: 83px auto 0 auto;
   height: 36px;
   background: linear-gradient(rgb(156, 156, 156) 50%, rgb(73, 73, 73));
-  background: linear-gradient(180deg, rgba(148,143,143,1) 50%, rgba(119,118,118,1) 50%);
+  background: linear-gradient(180deg, rgb(128, 123, 123) 50%, rgb(109, 108, 108) 50%);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -215,6 +215,17 @@ table {
   border: none;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+  color: white
+}
+
+.nav-search > input:focus {
+  background-color: white;
+  color: black;
+}
+
+input:focus + #magnify-icon {
+  filter: none;
+  -webkit-filter: none;
 }
 
 #magnify-icon {
@@ -229,5 +240,43 @@ table {
 
 main {
   background-image: url("images/main-image.jpg");
-  
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 684px;
+  background-position: center 100%;
+}
+
+aside {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.aside-list {
+  margin-top: 2px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  grid-column-gap: 2px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.aside-list img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+
+.aside-list > li {
+  height: 100%;
+  min-width: 256px;
+  object-fit: cover;
+  overflow: hidden;
+
 }
